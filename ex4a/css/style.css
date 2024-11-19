@@ -64,19 +64,20 @@ p {
 }
 
 #hero-box-wrapper {
-    text-align: center;
+    display: flex;
+    margin-top: 4%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box {
-    display: inline-block;
     height: 201px;
     width: 201px;
-    margin: 2%;
+    margin-bottom: 5%;
 }
 
 #box1 {
     background-color: #a4aed4;
-    margin-left: 0;
 }
 #box2 {
     background-color: #6e6e6e;
@@ -86,7 +87,6 @@ p {
 }
 #box4 {
     background-color: #afafaf;
-    margin-right: 0;
 }
 
 #bottom {
@@ -127,16 +127,8 @@ p {
         height: 38vw;
         width: 38vw;
     }
-    .box:nth-child(odd) {
-        margin-left: 0;
-        
-    }
-    .box:nth-child(even) {
-        margin-right: 0;
-        
-    }
-}
 
+}
 
 @media screen and (max-width: 544px) {
     
@@ -146,14 +138,6 @@ p {
     .box {
         height: 89vw;
         width: 89vw;
-    }
-    .box:nth-child(odd) {
-        margin-right: 0;
-        
-    }
-    .box:nth-child(even) {
-        margin-left: 0;
-        
     }
     
     #bottom {columns: 1;}

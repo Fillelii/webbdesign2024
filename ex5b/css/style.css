@@ -1,0 +1,17 @@
+#wrapper {
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.6%;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+#site-icon {
+    grid-column: 1/2;
+}
+
+#site-icon img{max-width: 100%;}

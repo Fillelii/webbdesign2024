@@ -1,0 +1,83 @@
+body {
+    background-color: #257180;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Lilita One";
+    font-weight: 600;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3.8em;
+    grid-area: huvudrubrik;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+.bildtext {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    grid-area: bildtext;
+}
+
+.text {
+    grid-area: brodtext;
+}
+
+.foto {
+    grid-area: hundbild;
+    width: 100%;
+}
+
+
+#wrapper {
+    padding: 1.6%;
+    box-shadow: 0 0 40px #00000033;
+    width: 80%;
+    background-color: #f2e5bf;
+    margin: 0 auto;
+    border: 10px solid #fd8b51;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 1.6%;
+    grid-row-gap: 1.6%;
+    grid-template-areas:
+        
+    "huvudrubrik    huvudrubrik    huvudrubrik"    
+    "hundbild       hundbild       hundbild"
+    "bildtext       .              brodtext" 
+        
+        ;
+}
+
+
+@media only screen and (max-width: 501px) {
+    
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "huvudrubrik"
+            "hundbild"
+            "bildtext"
+            "brodtext"
+            ;
+        
+    }
+}
